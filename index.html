@@ -27,7 +27,7 @@
     const telegram = document.querySelector('.telegram')
     let number = null
     
-console.log('hi');
+
     input.addEventListener("change", (e)=>{
         number = e.target.value
     })
@@ -36,7 +36,7 @@ console.log('hi');
             alert('Wrong number')
             return;
         }
-        window.open(`https://wa.me/+91${number}/?text="Hello"`, '_blank');
+        window.open(`https://wa.me/+91${number}/`, '_blank');
     })
     telegram.addEventListener("click", ()=>{
         if(number.length < 10){
